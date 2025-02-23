@@ -11,3 +11,7 @@ This project uses an autoencoder model to reconstruct images of uninfected cells
 
 ![alt text](./gitpictures/cell1.png)
 ![alt text](./gitpictures/cell2.png)
+
+# Variational Autoencoder on MNIST dataset
+
+This code demonstrates the use of a Variational Autoencoder (VAE) to encode and decode MNIST images. The encoder maps images to a latent space, represented by a mean and variance, from which a latent vector is sampled using the reparameterization trick. The decoder then reconstructs the images from this latent vector, and the model is trained to minimize both reconstruction loss and the Kullback-Leibler divergence, which ensures that the latent space follows a normal distribution.
